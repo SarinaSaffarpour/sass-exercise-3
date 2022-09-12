@@ -1,0 +1,40 @@
+.exercise {
+  border: 0.09375rem solid red;
+  text-align: center;
+  padding: 0.9375rem;
+  padding-top: 1.25rem;
+}
+.exercise .exercise-title {
+  color: green;
+  border-bottom: 0.09375rem solid blue;
+  width: 26%;
+  margin: auto;
+}
+.exercise .first-container {
+  display: flex;
+  flex-direction: column;
+}
+.exercise .second-container {
+  display: flex;
+}
+.exercise .blue-article {
+  border: 0.09375rem solid green;
+  padding: 0.9375rem;
+  margin-top: 0.9375rem;
+  color: blue;
+  font-size: 1rem;
+}
+.exercise .red-article {
+  border: 0.09375rem solid green;
+  padding: 0.9375rem;
+  margin-top: 0.9375rem;
+  color: red;
+  font-size: 1rem;
+}
+.exercise .footer-article {
+  border: 0.09375rem solid blue;
+  padding: 0.9375rem;
+  margin-top: 0.9375rem;
+  color: green;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */

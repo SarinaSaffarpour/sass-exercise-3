@@ -1,0 +1,45 @@
+@use "sass:color";
+@use "variables.scss" as var;
+@use "function.scss" as func;
+$color-primary: var.$color-primary;
+$color-tertiary: var.$color-tertiary;
+$blue-color: var.$blue-color;
+
+@mixin articles($color, $border-color, $font-size) {
+  border: func.rem(1.5) solid $border-color;
+  padding: func.rem(15);
+  margin-top: func.rem(15);
+  color: $color;
+  font-size: $font-size;
+}
+
+.exercise {
+  border: func.rem(1.5) solid $color-primary;
+  text-align: center;
+  padding: func.rem(15);
+  padding-top: func.rem(20);
+
+  .exercise-title {
+    color: $color-tertiary;
+    border-bottom: func.rem(1.5) solid $blue-color;
+    width: 26%;
+    margin: auto;
+  }
+
+  .first-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .second-container {
+    display: flex;
+  }
+  .blue-article {
+    @include articles($blue-color, $color-tertiary, 1rem);
+  }
+  .red-article {
+    @include articles($color-primary, $color-tertiary, 1rem);
+  }
+  .footer-article {
+    @include articles($color-tertiary, $blue-color, func.rem(24));
+  }
+}
